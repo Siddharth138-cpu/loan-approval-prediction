@@ -13,7 +13,7 @@ from sklearn.preprocessing import LabelEncoder
 # ==============================
 @st.cache_data
 def load_data():
-    df = pd.read_csv("D:\\projects\\sid\\siddd.venv\\loan_approval_dataset.csv")
+    df = pd.read_csv("loan_approval_dataset.csv")
     df.columns = df.columns.str.strip()
     df.drop("loan_id", axis=1, inplace=True)
 
@@ -83,3 +83,4 @@ def main():
 # ==============================
 if __name__ == "__main__":
     main()
+
